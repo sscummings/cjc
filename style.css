@@ -1,0 +1,100 @@
+/*
+ Theme Name:	Twenty Twenty Child
+ Theme URI:		https://github.com/sscummings/cjc
+ Description:	Custom fonts for WordPress's Twenty Twenty theme
+ Author:		Stephen Cummings
+ Author URI:	https://github.com/sscummings
+ Template:		twentytwenty
+ Version:		1.0.0
+ License:		MIT License
+ License URI:	https://choosealicense.com/licenses/mit/
+*/
+
+/*
+COLORS
+
+pink:	#CD2653;
+aqua:	#1EAFAE;
+beige:	#F5EFE0;
+
+*/
+
+/* Import Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Apply font to entry content */
+body {
+	font-family: 'Quattrocento Sans', sans-serif;
+}
+
+/* Apply font to headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.site-title.faux-heading {
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* Apply font to buttons */
+button,
+.button,
+.faux-button,
+.faux-button.more-link,
+.wp-block-button__link,
+.wp-block-file__button {
+	font-family: 'Quattrocento Sans', sans-serif;
+}
+
+/* Apply font to menu */
+.primary-menu {
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+/* Unset active nave item underline */
+.primary-menu li.current-menu-item > a,
+.primary-menu li.current-menu-item > .link-icon-wrapper > a {
+	text-decoration: none;
+}
+
+/* Apply font to entry content */
+.entry-content {
+	font-family: 'Quattrocento Sans', sans-serif;
+}
+
+/* Hide entry header on homepage */
+.home .entry-header {
+	display: none !important;
+}
+
+/* Apply color to entry title */
+h1.entry-title,
+h2.entry-title {
+    color: #1EAFAE; /* aqua */
+}
+
+/* Reduce padding around page heading */
+@media (min-width: 700px) {
+	.singular .entry-header {
+		padding: 2rem 0 4rem;
+	}
+}
+
+/* Display tagline at all screen sizes */
+.site-description {
+	display: block;
+}
+
+/* Reduce tagline font size on the smallest screens */
+@media (max-width: 500px) {
+	.site-description {
+		font-size: 3.5vw;
+	}
+}
