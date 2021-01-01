@@ -9,4 +9,7 @@ function theme_enqueue_styles() {
     );
 }
 
+add_filter( 'widget_text', 'shortcode_unautop');
+add_filter( 'widget_text', 'do_shortcode');
+
 ?>
