@@ -98,3 +98,17 @@ h2.entry-title {
 		font-size: 3.5vw;
 	}
 }
+
+/* Change max width of standard content column to accommodate new form */
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide),
+[class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+	max-width: 74rem;
+}
+
+/* Remove top margin from first children in various blocks */
+.wp-block-group__inner-container > *:first-child,
+.wp-block-column > *:first-child {
+	margin-top: 0 !important;
+}
+
+
